@@ -1,0 +1,61 @@
+/* Custom styles for the drag-and-drop area */
+.drop-zone {
+  border: 2px dashed #007bff;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.drop-zone.drag-over {
+  background-color: #f8f9fa;
+}
+
+.drop-zone p {
+  margin: 0;
+}
+
+/* Button styles */
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Alert styles */
+.alert {
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1.display-4 {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}
