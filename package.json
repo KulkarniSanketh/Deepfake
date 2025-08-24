@@ -1,0 +1,38 @@
+{
+  "name": "deepfake-detection-app",
+  "version": "1.0.0",
+  "description": "AI-powered deepfake detection application for images and videos",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd flask-server && npm install && cd ../client && npm install",
+    "start-backend": "cd flask-server && npm start",
+    "start-frontend": "cd client && npm run dev",
+    "dev": "concurrently --kill-others-on-fail \"npm run start-backend\" \"wait-on http://localhost:5000 && npm run start-frontend\"",
+    "dev-simple": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "build": "cd client && npm run build",
+    "test": "echo \"No tests specified\" && exit 0",
+    "clean": "rm -rf node_modules flask-server/node_modules client/node_modules",
+    "postinstall": "echo \"Installation complete! Run 'npm run dev' to start the application.\""
+  },
+  "keywords": [
+    "deepfake",
+    "detection",
+    "ai",
+    "machine-learning",
+    "image-analysis",
+    "video-analysis",
+    "react",
+    "nodejs",
+    "transformers"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
